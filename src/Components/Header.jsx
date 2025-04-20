@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../Index.css'
+import '../index.css'
 import SlideDialog from './SlideDialog'
 import { Button } from '@mui/material'
 import OutlinedButton from './Buttons/OutlinedButton'
