@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply px-4 md:px-20 ; 
+  }
+}
+.subheader{
+  @apply text-white text-lg font-semibold bg-blue-600 rounded-[5px]  w-full h-14 items-center flex  justify-center
+}
+.contentTitle{
+  @apply text-base font-semibold sm:text-base md:text-lg text-center mx-4
+}
+.swal2-front {
+  z-index: 2000 !important;
+}
+.swal2-container {
+  z-index: 2000 !important;
+}
+.my-swal {
+  width: 500px !important;      /* Adjust width */
+  max-width: 80vw !important;   /* Responsive fallback */
+  padding: 20px !important;     /* Optional padding */
+  font-size: 1rem;              /* Optional text size */
+}
+
