@@ -149,10 +149,10 @@ const SignUpPage = () => {
                 <section className='flex flex-col justify-center gap-3 '>
                     {/* Full Name Field */}
                     <article className='flex flex-col justify-center'>
-                        <p>Full name:</p>
+                        <p>Student Id:</p>
                         <input
                             className='border-gray-500 border rounded-[5px] p-2'
-                            placeholder='Kean Joshua'
+                            placeholder='Enter your stundent id'
                             type="number"
                             value={id}
                             onChange={handleNameChange}

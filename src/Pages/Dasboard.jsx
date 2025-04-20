@@ -1,6 +1,6 @@
 import React from 'react'
 import CustomButton from '../Components/CustomButton'
-import '../Index.css'
+import '../index.css'
 import Schedule from '../Components/Schedule'
 import { History, ChevronRight, NotificationsActiveOutlined } from "@mui/icons-material"
 import Instruction from '../Components/Instruction'
