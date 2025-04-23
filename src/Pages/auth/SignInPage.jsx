@@ -39,7 +39,7 @@ const SignInPage = () => {
             const formData = new FormData();
             formData.append('email', email); // use the actual email value
     
-            const response = await axios.post('https://try-me-vtgf.onrender.com/api/finduser', formData);
+            const response = await axios.post('https://tryme-production.up.railway.app/api/finduser', formData);
     
             if (response.status === 200) {
                 Swal.fire({
@@ -99,7 +99,7 @@ const SignInPage = () => {
         setLoginLoading(true);
     
         try {
-            const response = await axios.post('https://try-me-vtgf.onrender.com/api/login', {
+            const response = await axios.post('https://tryme-production.up.railway.app/api/login', {
                 email,
                 password,
             });
@@ -107,7 +107,7 @@ const SignInPage = () => {
             const student_id = parseInt(response.data.user.student_id, 10);
         
             // Fetch enrollments
-            const enrollmentsResponse = await axios.get(`https://try-me-vtgf.onrender.com/enrollments/${student_id}`);
+            const enrollmentsResponse = await axios.get(`https://tryme-production.up.railway.app/enrollments/${student_id}`);
         
             // Store in localStorage
             localStorage.setItem('enrollments', JSON.stringify(enrollmentsResponse.data));

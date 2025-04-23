@@ -52,7 +52,7 @@ const OtpVerification = () => {
             });
     
             try {
-                const response = await axios.post('https://try-me-vtgf.onrender.com/api/verify', {
+                const response = await axios.post('https://tryme-production.up.railway.app/api/verify', {
                     email: email,
                     code: otpInt
                 });
@@ -120,7 +120,7 @@ const OtpVerification = () => {
             const formData = new FormData();
             formData.append('email', email); // replace with actual email variable
     
-            await axios.put('https://try-me-vtgf.onrender.com/api/resend', formData);
+            await axios.put('https://tryme-production.up.railway.app/api/resend', formData);
     
             // Show success message
             Swal.fire({

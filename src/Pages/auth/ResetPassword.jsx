@@ -40,7 +40,7 @@ const ResetPassword = () => {
                 }
             });
     
-            const response = await axios.put('https://try-me-vtgf.onrender.com/api/resetpassword', formData);
+            const response = await axios.put('https://tryme-production.up.railway.app/api/resetpassword', formData);
     
             Swal.close(); // Close loading
     

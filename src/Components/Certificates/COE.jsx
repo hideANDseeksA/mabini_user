@@ -101,7 +101,7 @@ const COE = () => {
                 });
     
                 try {
-                    const response = await axios.post('https://try-me-vtgf.onrender.com/certificate/request', {
+                    const response = await axios.post('https://tryme-production.up.railway.app/certificate/request', {
                         student_id: student_id,
                         certificate_type: 'Certificate of Enrollment',
                         certificate_details: data,

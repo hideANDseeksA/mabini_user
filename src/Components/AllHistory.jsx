@@ -55,7 +55,7 @@ const AllHistory = ({ studentId }) => {
         });
   
         const response = await axios.get(
-          `https://try-me-vtgf.onrender.com/certificate/by_student?student_id=${student_id}`
+          `https://tryme-production.up.railway.app/certificate/by_student?student_id=${student_id}`
         );
         setRows(response.data);
   

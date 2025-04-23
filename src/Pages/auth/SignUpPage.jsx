@@ -98,7 +98,7 @@ const SignUpPage = () => {
         });
     
         try {
-            const response = await axios.post("https://try-me-vtgf.onrender.com/api/create_user", {
+            const response = await axios.post("https://tryme-production.up.railway.app/api/create_user", {
                 student_id: id,
                 email: email,
                 password: password

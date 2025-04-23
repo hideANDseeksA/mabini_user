@@ -109,7 +109,7 @@ const COG = () => {
     
                     // Step 1: Fetch student grades
                     const gradesResponse = await fetch(
-                        `https://try-me-vtgf.onrender.com/grades/retrieve?student_id=${student_id}&academic_year=${year}&semester=${semester}`
+                        `https://tryme-production.up.railway.app/grades/retrieve?student_id=${student_id}&academic_year=${year}&semester=${semester}`
                     );
     
                     if (!gradesResponse.ok) {
@@ -129,7 +129,7 @@ const COG = () => {
                         subjects: gradesData,
                     };
     
-                    const submitResponse = await axios.post('https://try-me-vtgf.onrender.com/certificate/request', {
+                    const submitResponse = await axios.post('https://tryme-production.up.railway.app/certificate/request', {
                         student_id: student_id,
                         certificate_type: 'Certificate of Grades',
                         certificate_details: data,
